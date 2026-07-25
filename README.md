@@ -1,131 +1,318 @@
-{
-  "campaign": {
-    "name": "Revanta Realty | Lead Generation | Gurgaon Real Estate",
-    "objective": "LEADS",
-    "status": "ACTIVE",
-    "buying_type": "AUCTION",
-    "daily_budget": 5000,
-    "optimization_goal": "LEAD_GENERATION",
-    "bid_strategy": "LOWEST_COST"
-  },
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revanta Realty | Meta Ads Lead Generation Campaign</title>
 
-  "ad_sets": [
-    {
-      "name": "Residential Buyers - Gurgaon",
-      "daily_budget": 2500,
-      "locations": [
-        "Gurgaon",
-        "Delhi",
-        "Noida",
-        "Faridabad",
-        "Ghaziabad"
-      ],
-      "age_min": 28,
-      "age_max": 55,
-      "interests": [
-        "Real Estate",
-        "Luxury Real Estate",
-        "Housing.com",
-        "MagicBricks",
-        "99acres",
-        "Home Loan",
-        "Interior Design"
-      ],
-      "placements": [
-        "Facebook Feed",
-        "Instagram Feed",
-        "Instagram Stories",
-        "Facebook Marketplace",
-        "Reels"
-      ]
-    },
-
-    {
-      "name": "Property Investors",
-      "daily_budget": 1500,
-      "age_min": 30,
-      "age_max": 60,
-      "interests": [
-        "Property Investment",
-        "Business Owner",
-        "Mutual Funds",
-        "Stock Market",
-        "Wealth Management",
-        "Luxury Lifestyle"
-      ]
-    },
-
-    {
-      "name": "NRI Investors",
-      "daily_budget": 1000,
-      "locations": [
-        "United Arab Emirates",
-        "United States",
-        "Canada",
-        "Singapore",
-        "United Kingdom"
-      ],
-      "interests": [
-        "Indian Real Estate",
-        "NRI Investment",
-        "Luxury Property"
-      ]
-    }
-  ],
-
-  "ads": [
-    {
-      "headline": "Own Your Dream Home in Gurgaon",
-      "primary_text": "Verified Properties | Lowest Price Guaranteed | Home Loan Assistance | Legal Support | Book Your Free Consultation Today.",
-      "description": "Premium Homes Across Gurgaon",
-      "cta": "LEARN_MORE"
-    },
-
-    {
-      "headline": "Luxury Floors at Attractive Prices",
-      "primary_text": "Explore Exclusive Inventory on Dwarka Expressway, Sohna Road & Golf Course Extension. Schedule Your Free Site Visit.",
-      "description": "Limited Inventory Available",
-      "cta": "BOOK_NOW"
-    },
-
-    {
-      "headline": "Invest in Gurgaon Before Prices Rise",
-      "primary_text": "High Appreciation Corridors | Exclusive Developer Inventory | Expert Investment Guidance.",
-      "description": "Book Your Consultation",
-      "cta": "GET_QUOTE"
-    }
-  ],
-
-  "lead_form": {
-    "title": "Book Your Free Property Consultation",
-    "questions": [
-      "Full Name",
-      "Phone Number",
-      "Email",
-      "Budget",
-      "Property Type",
-      "Preferred Location",
-      "Purchase Timeline",
-      "Need Site Visit?"
-    ],
-    "thank_you_message": "Thank you! Our Property Expert will contact you within 15 minutes."
-  },
-
-  "tracking": {
-    "meta_pixel": true,
-    "conversions_api": true,
-    "utm_parameters": {
-      "utm_source": "facebook",
-      "utm_medium": "paid_social",
-      "utm_campaign": "revanta_realty_leads",
-      "utm_content": "{{ad.name}}"
-    }
-  },
-
-  "kpis": {
-    "target_cpl": "₹300-₹800",
-    "target_ctr": "2.5%",
-    "target_conversion_rate": "15%",
-    "follow_up_time": "Within 15 minutes"
-  }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+body{
+    background:#f4f7fa;
+    color:#333;
+}
+
+header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
+    line-height:1.8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.ad{
+    background:#f8fbff;
+    border-left:5px solid #0077ff;
+    padding:20px;
+    border-radius:8px;
+}
+
+button{
+    background:#0077ff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#005fd1;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Revanta Realty</h1>
+
+<p>Meta Ads Lead Generation Campaign Portfolio</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Campaign Objective</h2>
+
+<p>
+Generate high-quality property buyer and investor leads using Facebook &
+Instagram Lead Ads targeting Gurgaon and Delhi NCR.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Target Audience</h2>
+
+<div class="grid">
+
+<div class="ad">
+<h3>Residential Buyers</h3>
+<ul>
+<li>Age 28–55</li>
+<li>Delhi NCR</li>
+<li>Luxury Home Buyers</li>
+<li>Housing.com</li>
+<li>MagicBricks</li>
+<li>99acres</li>
+</ul>
+</div>
+
+<div class="ad">
+<h3>Property Investors</h3>
+<ul>
+<li>Business Owners</li>
+<li>Entrepreneurs</li>
+<li>High Net Worth Individuals</li>
+<li>Mutual Fund Investors</li>
+<li>Stock Market</li>
+</ul>
+</div>
+
+<div class="ad">
+<h3>NRI Buyers</h3>
+<ul>
+<li>UAE</li>
+<li>USA</li>
+<li>Canada</li>
+<li>UK</li>
+<li>Singapore</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Advertisement Creatives</h2>
+
+<div class="grid">
+
+<div class="ad">
+
+<h3>Dream Home Campaign</h3>
+
+<p>
+
+✔ Verified Properties<br>
+
+✔ Lowest Price Guarantee<br>
+
+✔ Home Loan Assistance<br>
+
+✔ Legal Support
+
+</p>
+
+<button>Learn More</button>
+
+</div>
+
+<div class="ad">
+
+<h3>Luxury Floors</h3>
+
+<p>
+
+Dwarka Expressway<br>
+
+Golf Course Extension<br>
+
+Sohna Road<br>
+
+Exclusive Inventory
+
+</p>
+
+<button>Book Site Visit</button>
+
+</div>
+
+<div class="ad">
+
+<h3>Investment Opportunity</h3>
+
+<p>
+
+High Appreciation Zones<br>
+
+Exclusive Developer Pricing<br>
+
+Expert Investment Advice
+
+</p>
+
+<button>Get Quote</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Lead Form Fields</h2>
+
+<form>
+
+<label>Full Name</label><br><br>
+
+<input type="text" placeholder="Your Name" style="width:100%;padding:12px;"><br><br>
+
+<label>Phone Number</label><br><br>
+
+<input type="tel" placeholder="Phone Number" style="width:100%;padding:12px;"><br><br>
+
+<label>Email</label><br><br>
+
+<input type="email" placeholder="Email Address" style="width:100%;padding:12px;"><br><br>
+
+<label>Budget</label><br><br>
+
+<select style="width:100%;padding:12px;">
+
+<option>₹80 Lakh - ₹1.5 Crore</option>
+
+<option>₹1.5 Crore - ₹3 Crore</option>
+
+<option>₹3 Crore+</option>
+
+</select><br><br>
+
+<label>Property Type</label><br><br>
+
+<select style="width:100%;padding:12px;">
+
+<option>Apartment</option>
+
+<option>Builder Floor</option>
+
+<option>Plot</option>
+
+<option>Commercial</option>
+
+</select><br><br>
+
+<button type="submit">Submit Lead</button>
+
+</form>
+
+</div>
+
+<div class="card">
+
+<h2>Campaign KPIs</h2>
+
+<ul>
+
+<li>Campaign Objective: Lead Generation</li>
+
+<li>Platform: Facebook & Instagram</li>
+
+<li>Estimated Daily Budget: ₹5,000</li>
+
+<li>Target Cost Per Lead: ₹300 – ₹800</li>
+
+<li>CTR Goal: 2.5%</li>
+
+<li>Conversion Rate Goal: 15%</li>
+
+<li>Response Time: Within 15 Minutes</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>Digital Marketing Portfolio Project | Revanta Realty Meta Ads Campaign</p>
+
+</footer>
+
+</body>
+</html>
